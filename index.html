@@ -1,0 +1,30 @@
+
+<h2>Login Here</h2>
+
+<form>
+  <label>Username:</label>
+  <input type="text" id="username" placeholder="Enter Username">
+
+  <br><br>
+
+  <label>Password:</label>
+  <input type="password" id="password" placeholder="Enter Password">
+
+  <br><br>
+
+  <button type="button" onclick="login()">Login</button>
+</form>
+
+<p id="message"></p>
+<script>
+function login() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if (user === "Deepak" && pass === "1234") {
+    document.getElementById("message").innerText = "Login Successful!";
+  } else {
+    document.getElementById("message").innerText = "Wrong Username or Password!";
+  }
+}
+</script>
